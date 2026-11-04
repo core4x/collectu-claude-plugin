@@ -1,0 +1,39 @@
+{
+  "name": "collectu-core",
+  "displayName": "Collectu Core",
+  "version": "1.0.0",
+  "description": "The MCP server of a Collectu Core you run - its modules, its running pipeline, its logs and metrics - in Claude Code. Install the collectu plugin too for the skills and the Collectu Hub.",
+  "author": {
+    "name": "Collectu",
+    "email": "info@collectu.de",
+    "url": "https://collectu.de"
+  },
+  "homepage": "https://collectu.de/docs/20_basic_features/55_mcp",
+  "documentationUrl": "https://collectu.de/docs/20_basic_features/55_mcp",
+  "privacyPolicyUrl": "https://collectu.de/privacy_policy",
+  "repository": "https://github.com/core4x/collectu-claude-plugin",
+  "keywords": [
+    "collectu",
+    "iiot",
+    "industrial-iot",
+    "mcp",
+    "edge"
+  ],
+  "icon": "./.claude-plugin/icon.png",
+  "userConfig": {
+    "core_mcp_url": {
+      "type": "string",
+      "title": "Core MCP server",
+      "description": "The address of the Core's MCP server: http://<host>:<api_port>/mcp/v1/ - the Core has to run with mcp = 1 in its settings.ini.",
+      "default": "http://localhost:8181/mcp/v1/",
+      "required": true
+    },
+    "core_token": {
+      "type": "string",
+      "title": "Hub API access token",
+      "description": "An API access token of the Collectu Hub (Account > API access tokens) of the Core's owner, with app:read (logs, metrics, the running pipeline), module:read, configuration:read, and task:create to start and stop modules and pipelines. Leave empty for a Core with api_authentication = 0.",
+      "sensitive": true,
+      "default": ""
+    }
+  }
+}

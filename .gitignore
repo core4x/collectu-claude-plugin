@@ -1,0 +1,18 @@
+# Byte-compiled / optimized / DLL files.
+__pycache__/
+*.py[cod]
+*.pyc
+
+# The coverage of the tests (see src/test/.coveragerc).
+.coverage
+.coverage.*
+htmlcov/
+
+# User-specific stuff
+.idea/
+
+# CMake
+cmake-build-*/
+
+# File-based project format
+*.iws

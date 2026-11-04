@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "collectu-core": {
+      "type": "http",
+      "url": "${user_config.core_mcp_url}",
+      "headers": {
+        "Authorization": "Bearer ${user_config.core_token}"
+      }
+    }
+  }
+}

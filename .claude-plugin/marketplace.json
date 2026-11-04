@@ -1,0 +1,37 @@
+{
+  "name": "collectu",
+  "description": "Claude Code plugins for Collectu - the Collectu Hub and the Collectu Cores you run.",
+  "owner": {
+    "name": "Collectu",
+    "email": "info@collectu.de",
+    "url": "https://collectu.de"
+  },
+  "plugins": [
+    {
+      "name": "collectu",
+      "source": "./plugins/collectu",
+      "description": "The Collectu Hub's MCP server, signed in with your Collectu account, and skills for modules, pipeline configurations, Core diagnostics, data queries and Grafana dashboards.",
+      "category": "development",
+      "relevance": {
+        "topic": "Collectu",
+        "signals": {
+          "cwd": ["**/collectu-core"],
+          "hosts": ["api.collectu.de"],
+          "filesRead": ["**/collectu-core/src/modules/**/*.py"]
+        }
+      }
+    },
+    {
+      "name": "collectu-core",
+      "source": "./plugins/collectu-core",
+      "description": "The MCP server of a Collectu Core you run: its modules, running pipeline, logs and metrics.",
+      "category": "development",
+      "relevance": {
+        "topic": "Collectu Core",
+        "signals": {
+          "cwd": ["**/collectu-core"]
+        }
+      }
+    }
+  ]
+}
