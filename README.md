@@ -37,8 +37,13 @@ permissions it gets, and select **Allow**. Claude Code holds the session from th
 under **Account > API access tokens** as a connected app, and deleting it there signs Claude Code
 out. Your Claude account and your Collectu account are independent of each other.
 
-The hub's address is a setting of the plugin (`/plugin configure collectu@collectu`): keep
-`https://api.collectu.de/mcp/v1` for collectu.de, or give the address of a hub of your own.
+The plugin connects to the hub of collectu.de, `https://api.collectu.de/mcp/v1`. The address is
+fixed so that every Claude client signs in to the same server. For a hub of your own, add its MCP
+server yourself and sign in to it the same way, through `/mcp`:
+
+```bash
+claude mcp add --transport http collectu-hub-own https://<api address of your hub>/mcp/v1
+```
 
 ## Connecting a Core
 

@@ -2,7 +2,7 @@
   "mcpServers": {
     "collectu-hub": {
       "type": "http",
-      "url": "${user_config.hub_mcp_url}"
+      "url": "https://api.collectu.de/mcp/v1"
     }
   }
 }

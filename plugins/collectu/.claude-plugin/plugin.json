@@ -1,7 +1,7 @@
 {
   "name": "collectu",
   "displayName": "Collectu",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "The Collectu Hub in Claude Code: its MCP server, signed in with your Collectu account, and skills for writing modules, building pipeline configurations, diagnosing Collectu Cores, querying data and building Grafana dashboards.",
   "author": {
     "name": "Collectu",
@@ -21,14 +21,5 @@
     "grafana",
     "timescaledb"
   ],
-  "icon": "./.claude-plugin/icon.png",
-  "userConfig": {
-    "hub_mcp_url": {
-      "type": "string",
-      "title": "Collectu Hub MCP server",
-      "description": "The address of the hub's MCP server. Keep the default for collectu.de; a hub of your own serves it at <its api address>/mcp/v1.",
-      "default": "https://api.collectu.de/mcp/v1",
-      "required": true
-    }
-  }
+  "icon": "./.claude-plugin/icon.png"
 }
