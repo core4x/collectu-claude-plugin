@@ -1,7 +1,7 @@
 {
   "name": "collectu-core",
   "displayName": "Collectu Core",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "The MCP server of a Collectu Core you run - its modules, its running pipeline, its logs and metrics - in Claude Code. Install the collectu plugin too for the skills and the Collectu Hub.",
   "author": {
     "name": "Collectu",
@@ -12,6 +12,7 @@
   "documentationUrl": "https://collectu.de/docs/20_basic_features/55_mcp",
   "privacyPolicyUrl": "https://collectu.de/privacy_policy",
   "repository": "https://github.com/core4x/collectu-claude-plugin",
+  "license": "MIT",
   "keywords": [
     "collectu",
     "iiot",

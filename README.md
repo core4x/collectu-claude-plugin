@@ -106,3 +106,7 @@ tells Claude to look for one before working out a procedure itself.
   ```bash
   claude plugin validate plugins/collectu-core
   ```
+
+## License
+
+[MIT](LICENSE) - for both plugins.

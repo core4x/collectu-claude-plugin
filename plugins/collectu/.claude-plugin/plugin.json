@@ -1,7 +1,7 @@
 {
   "name": "collectu",
   "displayName": "Collectu",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "The Collectu Hub in Claude Code: its MCP server, signed in with your Collectu account, and skills for writing modules, building pipeline configurations, diagnosing Collectu Cores, querying data and building Grafana dashboards.",
   "author": {
     "name": "Collectu",
@@ -12,6 +12,7 @@
   "documentationUrl": "https://collectu.de/docs/20_basic_features/55_mcp",
   "privacyPolicyUrl": "https://collectu.de/privacy_policy",
   "repository": "https://github.com/core4x/collectu-claude-plugin",
+  "license": "MIT",
   "keywords": [
     "collectu",
     "iiot",
